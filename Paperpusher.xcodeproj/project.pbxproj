@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421D33272751F7300030E2FC /* SharedCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421D33262751F7300030E2FC /* SharedCode.swift */; };
+		421D332B2751F99E0030E2FC /* RailCSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421D332A2751F99E0030E2FC /* RailCSVReader.swift */; };
+		421D332E2751FD540030E2FC /* RailCSVContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421D332D2751FD540030E2FC /* RailCSVContainer.swift */; };
+		421D333227520F3C0030E2FC /* RailCSVSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421D333127520F3C0030E2FC /* RailCSVSorter.swift */; };
 		42734AC7273F4C1D002F6DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42734AC6273F4C1D002F6DC3 /* AppDelegate.swift */; };
 		42734AC9273F4C1D002F6DC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42734AC8273F4C1D002F6DC3 /* ViewController.swift */; };
 		42734ACB273F4C1E002F6DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42734ACA273F4C1E002F6DC3 /* Assets.xcassets */; };
 		42734ACE273F4C1E002F6DC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42734ACC273F4C1E002F6DC3 /* Main.storyboard */; };
+		42F91CBD2752CC92009E763F /* RailCodeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F91CBC2752CC92009E763F /* RailCodeListViewController.swift */; };
+		42F91CC02752FE51009E763F /* RailCSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F91CBF2752FE51009E763F /* RailCSVExporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		421D33262751F7300030E2FC /* SharedCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCode.swift; sourceTree = "<group>"; };
+		421D332A2751F99E0030E2FC /* RailCSVReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailCSVReader.swift; sourceTree = "<group>"; };
+		421D332D2751FD540030E2FC /* RailCSVContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailCSVContainer.swift; sourceTree = "<group>"; };
+		421D333127520F3C0030E2FC /* RailCSVSorter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailCSVSorter.swift; sourceTree = "<group>"; };
 		42734AC3273F4C1D002F6DC3 /* Paperpusher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paperpusher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42734AC6273F4C1D002F6DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42734AC8273F4C1D002F6DC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +31,8 @@
 		42734ACD273F4C1E002F6DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42734ACF273F4C1E002F6DC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42734AD0273F4C1E002F6DC3 /* Paperpusher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Paperpusher.entitlements; sourceTree = "<group>"; };
+		42F91CBC2752CC92009E763F /* RailCodeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailCodeListViewController.swift; sourceTree = "<group>"; };
+		42F91CBF2752FE51009E763F /* RailCSVExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailCSVExporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +46,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		421D33292751F9880030E2FC /* Rail Summary */ = {
+			isa = PBXGroup;
+			children = (
+				421D332A2751F99E0030E2FC /* RailCSVReader.swift */,
+				421D332D2751FD540030E2FC /* RailCSVContainer.swift */,
+				421D333127520F3C0030E2FC /* RailCSVSorter.swift */,
+				42F91CBC2752CC92009E763F /* RailCodeListViewController.swift */,
+				42F91CBF2752FE51009E763F /* RailCSVExporter.swift */,
+			);
+			path = "Rail Summary";
+			sourceTree = "<group>";
+		};
 		42734ABA273F4C1D002F6DC3 = {
 			isa = PBXGroup;
 			children = (
@@ -54,7 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				42734AC6273F4C1D002F6DC3 /* AppDelegate.swift */,
+				421D33262751F7300030E2FC /* SharedCode.swift */,
 				42734AC8273F4C1D002F6DC3 /* ViewController.swift */,
+				421D33292751F9880030E2FC /* Rail Summary */,
 				42734ACA273F4C1E002F6DC3 /* Assets.xcassets */,
 				42734ACC273F4C1E002F6DC3 /* Main.storyboard */,
 				42734ACF273F4C1E002F6DC3 /* Info.plist */,
@@ -132,7 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421D33272751F7300030E2FC /* SharedCode.swift in Sources */,
+				421D332B2751F99E0030E2FC /* RailCSVReader.swift in Sources */,
 				42734AC9273F4C1D002F6DC3 /* ViewController.swift in Sources */,
+				421D333227520F3C0030E2FC /* RailCSVSorter.swift in Sources */,
+				421D332E2751FD540030E2FC /* RailCSVContainer.swift in Sources */,
+				42F91CC02752FE51009E763F /* RailCSVExporter.swift in Sources */,
+				42F91CBD2752CC92009E763F /* RailCodeListViewController.swift in Sources */,
 				42734AC7273F4C1D002F6DC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +313,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.trapac.Paperpusher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -302,6 +335,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.trapac.Paperpusher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
