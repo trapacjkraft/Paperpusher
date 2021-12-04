@@ -81,14 +81,24 @@ class RailCSVReader: NSObject {
                 }
                 
             }
-            
+                        
             removeCount += 1
             
         }
-        
-        // Remove non-container lines
+
+        // Remove lines up to and including the header row
         
         separatedContents.removeFirst(removeCount)
+
+        // Remove any blank lines
+        
+        for line in separatedContents {
+            if line.isEmpty {
+                if let index = separatedContents.firstIndex(of: line) {
+                    separatedContents.remove(at: index)
+                }
+            }
+        }
         
         
         // Create the containers
